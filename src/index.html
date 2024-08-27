@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+<body class="bg-white text-gray-900 transition-all flex justify-center">
+
+    <div class="container mx-auto p-4">
+        <header class="flex justify-center items-center mb-4">
+            <h1 class="text-center text-2xl font-bold">Weather Forecast</h1>
+        </header>
+        
+
+        <div class="flex space-x-2 mb-4">
+            <input id="searchInput" type="text" placeholder="Enter city" class="p-2 border rounded flex-grow">
+            <button id="searchButton" class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+            <button id="currentLocationButton" class="bg-green-500 text-white px-4 py-2 rounded">Use Current Location</button>
+        </div>
+
+        <div id="weatherDisplay" class="border p-4 rounded bg-gray-100 mb-4">
+            
+        </div>
+
+        <div id="forecastDisplay" class="border p-4 rounded bg-gray-100">
+           
+        </div>
+
+        <select id="recentCities" class="mt-4 p-2 rounded bg-white hidden">
+            
+        </select>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
